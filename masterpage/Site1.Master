@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="masterpage.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:TextBox ID="TextBox1" runat="server" BackColor="#CC0066" BorderColor="#990099" BorderStyle="Solid" BorderWidth="5px" Font-Bold="True" Font-Size="Large" ForeColor="Black" Width="365px">WELCOME TO HOME APPLIANCES</asp:TextBox>
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:HyperLink ID="HyperLink1" runat="server" Font-Italic="True" Font-Size="Small" ForeColor="#FFCC00" NavigateUrl="~/packages.config">CONFIG LINKS</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink2" runat="server" Font-Italic="True" Font-Size="Small" ForeColor="#669900" Target="_search">SEARCH</asp:HyperLink>
+        </div>
+    </form>
+</body>
+</html>
